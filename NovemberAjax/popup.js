@@ -18,8 +18,11 @@ const scanDocument=(arg)=> {
     for(var compteur=0;compteur<totalElements;compteur++){
       var urlFromHtml=document.getElementsByClassName(arg)[compteur].getAttribute('href');
       if(urlFromHtml!='javascript:void(0)'){
-          arrayElements=arrayElements+"<p>"+urlFromHtml+"</p>";
-          openPage(urlFromHtml);
+            arrayElements=arrayElements+"<p>"+urlFromHtml+"</p>";
+            if(document.getElementById("optionOpenUrlsOn").checked){
+                console.log("Option Open Urls ON");
+                openPage(urlFromHtml);
+            }
       }
     }
     document.getElementById("total-count").innerHTML=totalElements-1;
