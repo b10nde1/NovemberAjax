@@ -1,4 +1,13 @@
 ------------------------------------------
+v1.11
+
+I-Add :
+1-Footer section => Proximity BBDO Mauritius
+2-CSS class => footer_proximity
+
+II-Remove :
+N/A
+------------------------------------------
 v1.1
 
 I-Add :
