@@ -1,18 +1,28 @@
 ------------------------------------------
+V21
+Note : Turn ON / Off Open Urls in new tab
+
+Add :
+Radio Btn (ON or Off)
+Condition for chrome open tab.
+
+Remove :
+N/A
+------------------------------------------
 v1.11
 
-I-Add :
-1-Footer section => Proximity BBDO Mauritius
-2-CSS class => footer_proximity
+Add :
+Footer section => Proximity BBDO Mauritius
+CSS class => footer_proximity
 
-II-Remove :
+Remove :
 N/A
 ------------------------------------------
 v1.1
 
-I-Add :
-1-Title NovemberAjax
-2-field 'Key' => config 'simple-link'
+Add :
+Title NovemberAjax
+field 'Key' => config 'simple-link'
 
-II-Remove :
-1-Code change -> remove 'simple-link' in code 
+Remove :
+Code change -> remove 'simple-link' in code 
