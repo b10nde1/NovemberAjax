@@ -1,0 +1,9 @@
+------------------------------------------
+v1.1
+
+I-Add :
+1-Title NovemberAjax
+2-field 'Key' => config 'simple-link'
+
+II-Remove :
+1-Code change -> remove 'simple-link' in code 
