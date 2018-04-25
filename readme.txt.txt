@@ -16,8 +16,11 @@ Functionality :
 
 How To Use November Ajax:
 1-Open Home Page (e.g : www.pampers.com)
-2-Save the source code of the page as a html.
-3-Run November Ajax (I configured the code to be run only when you open www.pampers.com)
+2-Save the source code of the page as a txt.
+3-Run November Ajax (NovemberAjax is configured to be run only when you open www.pampers.com)
+4-Select an option if you want or not to open result in other tab.
+5-Use 'key' to specify what you search in code.
+6-Select txt file.
 
 Result :
 1-November Ajax return a list of Urls with the node 'single-link' (Categories, sub-categories, Reward LP, Rewards Catalogue, Product LP)
@@ -30,7 +33,7 @@ Test can be done with November Ajax :
 3-Verify no UI issue in each categories / sub-categories page(Open all Urls).
 4-Verify all categories / sub-categories open correctly.(Open all Urls)
 
-V1.0
+V2.1
 20/04/2018
 ricky.dovankhac@proximitybbo.fr
 Ext : 288
