@@ -1,4 +1,15 @@
 ------------------------------------------
+V2_2
+Note : Get link label + link data action detail
+
+Add :
+Get link label
+Get link data-action-detail
+Add label+data-action-detail in result 
+
+Remove :
+N/A
+------------------------------------------
 V21
 Note : Turn ON / Off Open Urls in new tab
 

@@ -17,9 +17,10 @@ const scanDocument=(arg)=> {
     var arrayElements="";
     for(var compteur=0;compteur<totalElements;compteur++){
       var urlFromHtml=document.getElementsByClassName(arg)[compteur].getAttribute('href');
-      console.log(document.getElementsByClassName(arg)[compteur].nodeValue);
+      let linkText=document.getElementsByClassName(arg)[compteur].text;
+      let linkDataActionDetail=document.getElementsByClassName(arg)[compteur].getAttribute('data-action-detail');
       if(urlFromHtml!='javascript:void(0)'){
-            arrayElements=arrayElements+"<p>"+urlFromHtml+"</p>";
+            arrayElements=arrayElements+"<p>"+linkText+" | "+urlFromHtml+" | "+linkDataActionDetail+"</p>";
             if(document.getElementById("optionOpenUrlsOn").checked){
                 console.log("Option Open Urls ON");
                 openPage(urlFromHtml);
