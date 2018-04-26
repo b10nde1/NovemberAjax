@@ -17,6 +17,7 @@ const scanDocument=(arg)=> {
     var arrayElements="";
     for(var compteur=0;compteur<totalElements;compteur++){
       var urlFromHtml=document.getElementsByClassName(arg)[compteur].getAttribute('href');
+      console.log(document.getElementsByClassName(arg)[compteur].nodeValue);
       if(urlFromHtml!='javascript:void(0)'){
             arrayElements=arrayElements+"<p>"+urlFromHtml+"</p>";
             if(document.getElementById("optionOpenUrlsOn").checked){
