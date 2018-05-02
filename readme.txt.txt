@@ -21,6 +21,11 @@ How To Use November Ajax:
 4-Select an option if you want or not to open result in other tab.
 5-Use 'key' to specify what you search in code.
 6-Select txt file.
+List of Key :
+Home Page Oasis NavMenu : simple-link
+Home Page Oasis Footer : footer-oasis__link
+Old Home Page NavMenu : nav__item-link
+Old Home Page Footer : l-footer__subnav-link
 
 Result :
 1-November Ajax return a list of Urls with both link label and link data-action-detail.
