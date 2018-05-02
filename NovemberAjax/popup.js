@@ -20,11 +20,15 @@ const scanDocument=(arg)=> {
         let linkText=document.getElementsByClassName(arg)[compteur].text;
         let linkDataActionDetail=document.getElementsByClassName(arg)[compteur].getAttribute('data-action-detail');
         if(urlFromHtml!='javascript:void(0)'){
-                arrayElements=arrayElements+"<p>"+linkText+" | "+urlFromHtml+" | "+linkDataActionDetail+"</p>";
-                if(document.getElementById("optionOpenUrlsOn").checked){
-                    console.log("Option Open Urls ON :"+compteur);
-                    openPage(urlFromHtml);
-                }
+            let tempVar="";
+            if(document.getElementById("optionLinkLabel").checked)tempVar=linkText+" | "
+            tempVar=tempVar+urlFromHtml;
+            if(document.getElementById("optionDataActionDetail").checked)tempVar=tempVar+" | "+linkDataActionDetail
+            arrayElements=arrayElements+"<p>"+tempVar+"</p>";
+            if(document.getElementById("optionOpenUrlsOn").checked){
+                console.log("Option Open Urls ON :"+compteur);
+                openPage(urlFromHtml);
+            }
         }
     }
     document.getElementById("total-count").innerHTML=totalElements-1;

@@ -1,4 +1,13 @@
 ------------------------------------------
+V2_4
+Note : Add option for dataAction and linkLabel
+
+Add :
+Checkbox for result 
+
+Remove :
+N/A
+------------------------------------------
 V2_3
 Note : Clean code
 
