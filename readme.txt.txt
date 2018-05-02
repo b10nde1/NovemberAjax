@@ -41,7 +41,7 @@ Test can be done with November Ajax :
 5-Verify link label.
 6-Verify link data-action-detail.
 
-V2.2
+V2.4
 27/04/2018
 ricky.dovankhac@proximitybbo.fr
 Ext : 288
