@@ -1,31 +1,31 @@
 let htmlFile=document.getElementById('htmlFile');
 
 htmlFile.onchange=function(activeTab){
-    var input = event.target;
-    var reader = new FileReader();
-    var searchKey=document.getElementById('searchKey').value;
+    let input = event.target;
+    let reader = new FileReader();
+    let searchKey=document.getElementById('searchKey').value;
     reader.onload = function(){
-        var dataURL = reader.result;
+        let dataURL = reader.result;
         document.getElementById("code-to-scan").innerHTML=dataURL;
         scanDocument(searchKey);
     };
-    var result = reader.readAsText(input.files[0]);
+    let result = reader.readAsText(input.files[0]);
 }
 
 const scanDocument=(arg)=> {
-    var totalElements=document.getElementsByClassName(arg).length;
-    var arrayElements="";
-    for(var compteur=0;compteur<totalElements;compteur++){
-      var urlFromHtml=document.getElementsByClassName(arg)[compteur].getAttribute('href');
-      let linkText=document.getElementsByClassName(arg)[compteur].text;
-      let linkDataActionDetail=document.getElementsByClassName(arg)[compteur].getAttribute('data-action-detail');
-      if(urlFromHtml!='javascript:void(0)'){
-            arrayElements=arrayElements+"<p>"+linkText+" | "+urlFromHtml+" | "+linkDataActionDetail+"</p>";
-            if(document.getElementById("optionOpenUrlsOn").checked){
-                console.log("Option Open Urls ON");
-                openPage(urlFromHtml);
-            }
-      }
+    let totalElements=document.getElementsByClassName(arg).length;
+    let arrayElements="";
+    for(let compteur=0;compteur<totalElements;compteur++){
+        let urlFromHtml=document.getElementsByClassName(arg)[compteur].getAttribute('href');
+        let linkText=document.getElementsByClassName(arg)[compteur].text;
+        let linkDataActionDetail=document.getElementsByClassName(arg)[compteur].getAttribute('data-action-detail');
+        if(urlFromHtml!='javascript:void(0)'){
+                arrayElements=arrayElements+"<p>"+linkText+" | "+urlFromHtml+" | "+linkDataActionDetail+"</p>";
+                if(document.getElementById("optionOpenUrlsOn").checked){
+                    console.log("Option Open Urls ON :"+compteur);
+                    openPage(urlFromHtml);
+                }
+        }
     }
     document.getElementById("total-count").innerHTML=totalElements-1;
     document.getElementById("list-urls").innerHTML=arrayElements;
@@ -38,7 +38,7 @@ const openPage=(urlIn)=>{
 }
 
 const copyElement=(el)=>{
-    var body = document.body, range, sel;
+    let body = document.body, range, sel;
     if (document.createRange && window.getSelection) {
         range = document.createRange();
         sel = window.getSelection();

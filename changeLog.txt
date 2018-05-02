@@ -1,4 +1,13 @@
 ------------------------------------------
+V2_3
+Note : Clean code
+
+Add :
+N/A
+
+Remove :
+N/A
+------------------------------------------
 V2_2
 Note : Get link label + link data action detail
 
