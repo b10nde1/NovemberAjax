@@ -19,8 +19,9 @@ How To Use November Ajax:
 2-Save the source code of the page as a txt.
 3-Run November Ajax (NovemberAjax is configured to be run only when you open www.pampers.com)
 4-Select an option if you want or not to open result in other tab.
-5-Use 'key' to specify what you search in code.
-6-Select txt file.
+5-Select an option if you want or not to add link label / data-action-detail in result
+6-Use 'key' to specify what you search in code.
+7-Select txt file.
 List of Key :
 Home Page Oasis NavMenu : simple-link
 Home Page Oasis Footer : footer-oasis__link
