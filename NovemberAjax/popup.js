@@ -26,19 +26,25 @@ const scanDocument=(arg)=> {
             if(document.getElementById("optionDataActionDetail").checked)tempVar=tempVar+" | "+linkDataActionDetail
             arrayElements=arrayElements+"<p>"+tempVar+"</p>";
             if(document.getElementById("optionOpenUrlsOn").checked){
-                console.log("Option Open Urls ON :"+compteur);
+                //console.log("Option Open Urls ON :"+compteur);
                 openPage(urlFromHtml);
             }
+            console.log(countElementCompleted(compteur,totalElements));
         }
     }
+    console.log('Completed');
     document.getElementById("total-count").innerHTML=totalElements-1;
     document.getElementById("list-urls").innerHTML=arrayElements;
     copyElement(document.getElementById("list-urls"));
   }
 
+const countElementCompleted=(indice, totalElement)=>{
+    return ((indice*100)/totalElement);
+}
+
 const openPage=(urlIn)=>{
     chrome.tabs.create({ url: urlIn , selected: false});
-    console.log("url || "+urlIn+" || ok");
+    //console.log("url || "+urlIn+" || ok");
 }
 
 const copyElement=(el)=>{
