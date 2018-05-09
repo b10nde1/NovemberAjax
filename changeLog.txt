@@ -1,4 +1,14 @@
 ------------------------------------------
+V2_5
+
+Note : Ajout du readme dans option.
+Clean option.js
+
+Add : how to in option.html
+
+Remove :
+N/A
+------------------------------------------
 V2_4
 Note : Add option for dataAction and linkLabel
 
