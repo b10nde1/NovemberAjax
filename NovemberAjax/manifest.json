@@ -1,6 +1,6 @@
 {
     "name": "November Ajax",
-    "version": "2.2",
+    "version": "2.5",
     "description": "NovemberAjax is an solution for Categories/Sub-categories",
     "permissions":["tabCapture","tabs","activeTab","declarativeContent","storage"],
     "background":{
